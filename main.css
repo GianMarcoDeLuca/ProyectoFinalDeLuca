@@ -1,0 +1,261 @@
+
+* {margin: 0;
+padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {background-color: rgb(94, 92, 92);}
+
+
+
+.header {
+  background-color: black;
+  border-bottom: groove 8px black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 200px auto;
+  align-items: center;}
+
+.logo{display: flex;
+  align-items: center;} 
+
+.logo--img{width: 60px;
+height: 60px;}
+
+.logo--texto{ color: white;
+  font-size: 30px;
+  font-family: 'instrumentSerif-regular';}
+
+.paginas{display: flex;
+justify-content: space-around;}  
+
+.paginas--link{
+  text-decoration: none;
+  font-family: 'sigmar-regular', sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;}
+
+@media (min-width: 1200px){
+.logo--img {width: 85px;
+  height: 85px;}
+
+.header{grid-template-columns: 325px 950px;
+grid-template-rows: 105px;}
+  
+.logo--texto {font-size: 55px;}
+      
+.paginas--link {font-size: 55px;}}
+
+@media(max-width:768px){
+
+.header{display: flex;
+justify-content: space-between;}
+
+.logo{ display: flex;
+align-items: center;}
+
+.logo:hover + .paginas, .paginas:hover{display: flex;}
+
+.paginas{position: absolute;
+  left:0;
+  top: 100%;
+  flex-direction: column;
+  background-color: black;
+  display: none;}
+}
+
+/* CSS index.html */
+
+#fondo-index{background-image: url("imagenes/skins-lol-msi-2023-oficial1.webp");
+  background-repeat: repeat;
+  background-size: contain;}
+
+#video {display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+height: 650px;}
+
+iframe{width: 70%;
+height: 75%;}
+
+section {margin-top: 70px;}
+
+article {padding-left: 50px;
+  padding-right: 50px;}
+
+h3 {font-size: 80px;
+  color: black;
+  text-align: center;
+  font-family: 'sigmar-regular';}
+
+
+p {font-size: 40px;
+  font-family:'WixMadeforText-VariableFont_wght' ;}
+
+#data {font-style: italic;}
+
+/* CSS Match list */
+
+#match-list {margin-top: 20px;
+  margin-left: 10px;
+  border: 2px solid black;
+  width: 850px;
+}
+
+h1 {
+  font-size: 35px;
+  background-color: black;
+  color: white;
+  font-family: 'roboto-thin';
+  padding: 10px;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.match--dia {
+  font-size: 40px;
+  color: whitesmoke;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px ;
+}
+
+.match--partida {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.match--partida--compu{font-size: 30px;}
+
+.match--partida--cel{display: none;}
+
+.match--url{display: flex}
+
+.url {font-size: 25px;
+  border: 1px solid black;
+  padding: 5px; }
+
+@media(max-width: 1200px)  
+{#match-list{width: 600px;}
+
+h1{font-size: 25px;}
+
+.match--partida--compu{font-size: 20px;}
+
+.match--dia{font-size: 30px;}
+
+.url{font-size: 15px;}
+}
+
+@media(max-width:768px)
+{#match-list{width: 300px}
+
+h1{font-size: 15px;}
+
+.match--partida--cel{display: flex;
+  font-size: 15px;
+justify-content: space-between;
+margin-bottom: 5px;}
+
+.match--partida--compu{display: none;}
+}
+
+
+
+/* CSS calendario */        
+
+
+.fecha {border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  font-family: 'roboto-thin' ;
+  font-size: 5vh;
+  color: black;
+  font-weight: bold;}
+
+    
+.partida {display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 1px;}
+
+.equipos{display: grid;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 80px 80px;
+  align-items: center;}    
+
+.equipo--compu1, .equipo--compu2{display: none;}
+
+.equipo--cel1, .equipo--cel2{
+  font-size: 200%;
+  color: whitesmoke;}
+
+.versus {display: none;}
+
+.bo5{font-size: 2.5em;
+  color: whitesmoke;}
+
+@media (min-width:768px){
+.fecha {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 45px;}
+
+.partida {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: "none equipos bo5";
+  justify-items: center;}
+
+.equipos {display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  grid-area: equipos;}
+
+.equipo--compu1, .equipo--compu2 {display: inline;
+  font-size: 25px;
+  color: whitesmoke;
+  width: 100%;}
+
+.equipo--compu1{text-align: right;} 
+  
+.versus {display: inline;
+  font-size: 40px;
+  color: white;
+  margin: 20px;}
+  
+.equipo--cel1, .equipo--cel2 {
+  display: none;}
+  
+.equipo1, .equipo2 {width: 85px;
+  height: 85px;}
+  
+.bo5 {grid-area: bo5;
+  font-size: 30px;}}
+
+@media (min-width: 1200px){
+
+.fecha{font-size: 55px;}  
+      
+.equipo--compu1, .equipo--compu2 {font-size: 35px;}
+      
+.versus {display: inline;
+  font-size: 40px;
+  color: white;
+  margin: 20px;}
+      
+.equipo--cel {
+  display: none;}}
