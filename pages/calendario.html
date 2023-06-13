@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,31 @@
 </head>
 
 <body>
+    <header class="navbar navbar-expand-sm navbar-dark header--mobile">
+        <div>
+            <img class="logo--img" src="../imagenes/landing-crest.png" alt="">
+            <a class="navbar-brand" href="#">MSI 2023</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/matchlist.html">Match list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/calendario.html">Calendario</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-    <header class="header">
-        <div class="logo">  
+    <header class="header--desktop">
+        <div class="logo">
             <img class="logo--img" src="../imagenes/landing-crest.png" alt="Logo">
             <a class="logo--texto" href="../index.html">MSI 2023</a>
         </div>
@@ -26,73 +49,74 @@
 
     <div>
         <div class="fecha">Martes 9 de Mayo</div>
-        <div class="partida"> 
+        <div class="partida">
             <div class="equipos">
-                <h2 class="equipo--compu1">G2 Esport</h2>  
+                <h2 class="equipo--compu1">G2 Esport</h2>
                 <img class="equipo1" src="../imagenes/G2.png" alt="G2 Esport">
-                <h2 class="equipo--cel1">G2</h2>  
+                <h2 class="equipo--cel1">G2</h2>
                 <div class="versus">VS</div>
                 <img class="equipo2" src="../imagenes/GenG.png" alt="Gen.G">
-                <h2 class="equipo--cel2">Gen.G</h2> 
-                <h2 class="equipo--compu2">Gen.G</h2> 
-            </div> 
+                <h2 class="equipo--cel2">Gen.G</h2>
+                <h2 class="equipo--compu2">Gen.G</h2>
+            </div>
             <div class="bo5">BO5</div>
         </div>
         <div class="fecha">Miércoles 10 de Mayo</div>
-        <div class="partida"> 
+        <div class="partida">
             <div class="equipos">
                 <h2 class="equipo--compu1">MAD Lions</h2>
                 <img class="equipo1" src="../imagenes/MAD.png" alt="MAD Lions">
-                <h2 class="equipo--cel1">MAD</h2>    
+                <h2 class="equipo--cel1">MAD</h2>
                 <div class="versus">VS</div>
                 <img class="equipo2" src="../imagenes/T1.png" alt="T1">
-                <h2 class="equipo--cel2">T1</h2> 
-                <h2 class="equipo--compu2">T1</h2> 
-            </div> 
+                <h2 class="equipo--cel2">T1</h2>
+                <h2 class="equipo--compu2">T1</h2>
+            </div>
             <div class="bo5">BO5</div>
         </div>
         <div class="fecha">Jueves 11 de Mayo</div>
-        <div class="partida"> 
+        <div class="partida">
             <div class="equipos">
                 <h2 class="equipo--compu1">Cloud9</h2>
                 <img class="equipo1" src="../imagenes/C9.png" alt="Cloud9">
-                <h2 class="equipo--cel1">C9</h2>    
+                <h2 class="equipo--cel1">C9</h2>
                 <div class="versus">VS</div>
                 <img class="equipo2" src="../imagenes/BLG.png" alt="Bilibili Gaming">
-                <h2 class="equipo--cel2">BLG</h2> 
-                <h2 class="equipo--compu2">Bilibili Gaming</h2> 
-            </div> 
+                <h2 class="equipo--cel2">BLG</h2>
+                <h2 class="equipo--compu2">Bilibili Gaming</h2>
+            </div>
             <div class="bo5">BO5</div>
         </div>
         <div class="fecha">Viernes 12 de Mayo</div>
-        <div class="partida"> 
+        <div class="partida">
             <div class="equipos">
-                <h2 class="equipo--compu1">JDG Intel Esport Club</h2> 
+                <h2 class="equipo--compu1">JDG Intel Esport Club</h2>
                 <img class="equipo1" src="../imagenes/JDG.png" alt="JDG Intel Esport Club">
-                <h2 class="equipo--cel1">JDG</h2>   
+                <h2 class="equipo--cel1">JDG</h2>
                 <div class="versus">VS</div>
                 <img class="equipo2" src="../imagenes/GG.png" alt="Golden Guardians">
-                <h2 class="equipo--cel2">GG</h2> 
-                <h2 class="equipo--compu2">Golden Guardians</h2> 
-            </div> 
-            <div class="bo5">BO5</div>    
+                <h2 class="equipo--cel2">GG</h2>
+                <h2 class="equipo--compu2">Golden Guardians</h2>
+            </div>
+            <div class="bo5">BO5</div>
         </div>
     </div>
 
-<footer>
-    <div class="imagenes--footer">
-      <a class="item--riot" href="https://www.riotgames.com/"></a>
-      <img src="../imagenes/Riot-footer.png" alt="">
-    </div>
-    <div class="imagenes--footer">
-        <a class="item--lol" href="https://leagueoflegends.com/"></a>
-        <img src="../imagenes/lol-footer.png" alt="">
-    </div>
-    <div class="copyright">Todos los derechos reservados. Riot Games 2023</div>
-</footer>
+    <footer>
+        <div class="imagenes--footer">
+            <a class="item--riot" href="https://www.riotgames.com/"></a>
+            <img src="../imagenes/Riot-footer.png" alt="">
+        </div>
+        <div class="imagenes--footer">
+            <a class="item--lol" href="https://leagueoflegends.com/"></a>
+            <img src="../imagenes/lol-footer.png" alt="">
+        </div>
+        <div class="copyright">Todos los derechos reservados. Riot Games 2023</div>
+    </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
