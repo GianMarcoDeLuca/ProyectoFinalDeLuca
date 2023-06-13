@@ -6,8 +6,17 @@ padding: 0;}
 
 body {background-color: rgb(94, 92, 92);}
 
+.header{display: none;}
 
+footer{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+padding: 20px;
+background-color: black;}
 
+.copyright{color: whitesmoke;}
+
+@media(min-width:768px){
 .header {
   background-color: black;
   border-bottom: groove 8px black;
@@ -26,7 +35,8 @@ height: 60px;}
 
 .logo--texto{ color: white;
   font-size: 30px;
-  font-family: 'instrumentSerif-regular';}
+  font-family: 'instrumentSerif-regular';
+text-decoration: none;}
 
 .paginas{display: flex;
 justify-content: space-around;}  
@@ -36,7 +46,8 @@ justify-content: space-around;}
   font-family: 'sigmar-regular', sans-serif;
   color: white;
   font-size: 30px;
-  font-weight: bold;}
+  font-weight: bold;}}
+
 
 @media (min-width: 1200px){
 .logo--img {width: 85px;
@@ -49,38 +60,23 @@ grid-template-rows: 105px;}
       
 .paginas--link {font-size: 55px;}}
 
-@media(max-width:768px){
-
-.header{display: flex;
-justify-content: space-between;}
-
-.logo{ display: flex;
-align-items: center;}
-
-.logo:hover + .paginas, .paginas:hover{display: flex;}
-
-.paginas{position: absolute;
-  left:0;
-  top: 100%;
-  flex-direction: column;
-  background-color: black;
-  display: none;}
-}
-
 /* CSS index.html */
 
-#fondo-index{background-image: url("imagenes/skins-lol-msi-2023-oficial1.webp");
+#fondo-index{background-image: url("../imagenes/skins-lol-msi-2023-oficial1.webp");
   background-repeat: repeat;
   background-size: contain;}
 
-#video {display: grid;
-  grid-template-columns: 100%;
-  justify-items: center;
-  align-items: center;
-height: 650px;}
-
-iframe{width: 70%;
-height: 75%;}
+  #video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  iframe {
+    width: 50%;
+    height: 60%;
+  }
 
 section {margin-top: 70px;}
 
@@ -88,13 +84,14 @@ article {padding-left: 50px;
   padding-right: 50px;}
 
 h3 {font-size: 80px;
-  color: black;
+  color: whitesmoke;
   text-align: center;
   font-family: 'sigmar-regular';}
 
 
 p {font-size: 40px;
-  font-family:'WixMadeforText-VariableFont_wght' ;}
+  font-family:'WixMadeforText-VariableFont_wght' ;
+color: white;}
 
 #data {font-style: italic;}
 
