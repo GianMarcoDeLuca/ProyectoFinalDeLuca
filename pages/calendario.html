@@ -1,122 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSI Calendario</title>
-    <link rel="shortcut icon" href="imagenes/icono-pagina.png" type="image/x-icon">
+    <meta name="description" content="Calendario de competiciones de League of Legends tras el msi">
+    <meta name="keywords" content="MSI, Mid Season Invitational, LLA, LEC, CBLOL, LPL, LCK, LCS">
+    <link rel="shortcut icon" href="../imagenes/icono-pagina.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
-    <header class="navbar navbar-expand-sm navbar-dark header--mobile">
-        <div>
-            <img class="logo--img" src="../imagenes/landing-crest.png" alt="">
-            <a class="navbar-brand" href="#">MSI 2023</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="opciones">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matchlist.html">Match list</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="calendario.html">Calendario</a>
-                </li>
-            </ul>
-        </div>
-    </header>
 
-    <header class="header--desktop">
-        <div class="logo">
-            <img class="logo--img" src="../imagenes/landing-crest.png" alt="Logo">
-            <a class="logo--texto" href="../index.html">MSI 2023</a>
-        </div>
-        <div class="paginas">
-            <a class="paginas--link" href="../index.html">Inicio</a>
-            <a class="paginas--link" href="matchlist.html">Match list</a>
-            <a class="paginas--link" href="calendario.html">Calendario</a>
-        </div>
-    </header>
-
+<header class="navbar navbar-expand-sm navbar-dark header--mobile">
     <div>
-        <div class="fecha">Martes 9 de Mayo</div>
-        <div class="partida">
-            <div class="equipos">
-                <h2 class="equipo--compu1">G2 Esport</h2>
-                <img class="equipo1" src="../imagenes/G2.png" alt="G2 Esport">
-                <h2 class="equipo--cel1">G2</h2>
-                <div class="versus">VS</div>
-                <img class="equipo2" src="../imagenes/GenG.png" alt="Gen.G">
-                <h2 class="equipo--cel2">Gen.G</h2>
-                <h2 class="equipo--compu2">Gen.G</h2>
-            </div>
-            <div class="bo5">BO5</div>
-        </div>
-        <div class="fecha">Miércoles 10 de Mayo</div>
-        <div class="partida">
-            <div class="equipos">
-                <h2 class="equipo--compu1">MAD Lions</h2>
-                <img class="equipo1" src="../imagenes/MAD.png" alt="MAD Lions">
-                <h2 class="equipo--cel1">MAD</h2>
-                <div class="versus">VS</div>
-                <img class="equipo2" src="../imagenes/T1.png" alt="T1">
-                <h2 class="equipo--cel2">T1</h2>
-                <h2 class="equipo--compu2">T1</h2>
-            </div>
-            <div class="bo5">BO5</div>
-        </div>
-        <div class="fecha">Jueves 11 de Mayo</div>
-        <div class="partida">
-            <div class="equipos">
-                <h2 class="equipo--compu1">Cloud9</h2>
-                <img class="equipo1" src="../imagenes/C9.png" alt="Cloud9">
-                <h2 class="equipo--cel1">C9</h2>
-                <div class="versus">VS</div>
-                <img class="equipo2" src="../imagenes/BLG.png" alt="Bilibili Gaming">
-                <h2 class="equipo--cel2">BLG</h2>
-                <h2 class="equipo--compu2">Bilibili Gaming</h2>
-            </div>
-            <div class="bo5">BO5</div>
-        </div>
-        <div class="fecha">Viernes 12 de Mayo</div>
-        <div class="partida">
-            <div class="equipos">
-                <h2 class="equipo--compu1">JDG Intel Esport Club</h2>
-                <img class="equipo1" src="../imagenes/JDG.png" alt="JDG Intel Esport Club">
-                <h2 class="equipo--cel1">JDG</h2>
-                <div class="versus">VS</div>
-                <img class="equipo2" src="../imagenes/GG.png" alt="Golden Guardians">
-                <h2 class="equipo--cel2">GG</h2>
-                <h2 class="equipo--compu2">Golden Guardians</h2>
-            </div>
-            <div class="bo5">BO5</div>
+        <img class="logo--img" src="../imagenes/icono header.png" alt="">
+        <a class="navbar-brand" href="#">MSI 2023</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="opciones">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="matchlist.html">Match list</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendario.html">Calendario</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<header class="header--desktop">
+    <div class="logo">
+        <img class="logo--img" src="../imagenes/icono header.png" alt="Logo">
+        <a class="logo--texto">MSI 2023</a>
+    </div>
+    <div class="paginas">
+        <a class="paginas--link" href="../index.html">Inicio</a>
+        <a class="paginas--link" href="matchlist.html">Match list</a>
+        <a class="paginas--link" href="calendario.html">Calendario</a>
+    </div>
+</header>
+
+<div class="encabezado">
+<h1 class="encabezado--titulo">Calendario competitivo</h1>
+<h2 class="encabezado--texto">Con el evento del MSI terminado aca te ofrecemos las diferentes ligas para que puedas seguir viviendo el mejor League of Legends</h2>
+</div>
+
+<main>
+    <div class="liga liga--lpl">
+        <video autoplay muted class="video--liga" src="../video/lpl video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/lpl">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@LPLOfficial">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
         </div>
     </div>
-
-    <footer>
-        <div class="imagenes--footer">
-            <a class="item--riot" href="https://www.riotgames.com/"></a>
-            <img src="../imagenes/Riot-footer.png" alt="">
+    <div class="liga liga--lck">
+        <video autoplay muted class="video--liga" src="../video/lck video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/lck">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@LCKglobal">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
         </div>
-        <div class="imagenes--footer">
-            <a class="item--lol" href="https://leagueoflegends.com/"></a>
-            <img src="../imagenes/lol-footer.png" alt="">
+    </div>
+    <div class="liga liga--lec">
+        <video autoplay muted class="video--liga" src="../video/lec video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/lec">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@LEC">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
         </div>
-        <div class="copyright">Todos los derechos reservados. Riot Games 2023</div>
-    </footer>
+    </div>
+    <div class="liga liga--lcs">
+        <video autoplay muted class="video--liga" src="../video/lcs video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/lcs">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@LCS">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
+        </div>
+    </div>
+    <div class="liga liga--lla">
+        <video autoplay muted class="video--liga" src="../video/lla video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/lla">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@lla">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
+        </div>
+    </div>
+    <div class="liga liga--cblol">
+        <video autoplay muted class="video--liga" src="../video/cblol video.mp4"></video>
+        <div class="fecha--calendario">Martes 6 de Junio</div>
+        <div class="logo--calendario">
+        <a class="logo--twitch" href="https://www.twitch.tv/cblol">
+            <img src="../imagenes/twitch.png" alt="">
+        </a>
+        <a class="logo--youtube" href="https://www.youtube.com/@CBLOL">
+            <img src="../imagenes/youtube.webp" alt="">
+        </a>
+        </div>
+    </div>
+</main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
+
+<footer>
+  <div class="imagenes--footer">
+    <a class="item--riot" href="https://www.riotgames.com/">
+    <img src="../imagenes/Riot-footer.png" alt="">
+    </a>
+  </div>
+  <div class="imagenes--footer">
+    <a class="item--lol" href="https://leagueoflegends.com/">
+    <img src="../imagenes/lol-footer.png" alt="">
+    </a>    
+  </div>
+  <div class="copyright">Todos los derechos reservados. Riot Games 2023</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
-
 </html>
