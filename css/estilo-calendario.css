@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@font-face {
+  font-family: "Wix Madefor Text";
+  src: url(../fuentes/WixMadeforText-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fuentes/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fuentes/Montserrat-Regular.ttf);
+}
+.encabezado {
+  padding: 10px;
+}
+.encabezado .encabezado--titulo {
+  font-family: "Times New Roman", Times, serif;
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+}
+.encabezado .encabezado--texto {
+  font-family: "raleway";
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.liga {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.liga .video--liga {
+  display: none;
+}
+.liga .fecha--calendario {
+  font-size: 25px;
+  color: white;
+  width: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.liga .logo--calendario {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+.liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
+  width: 30px;
+  height: 30px;
+}
+
+.liga--lpl {
+  background-image: url(../imagenes/banner\ lpl.png);
+}
+
+.liga--lck {
+  background-image: url(../imagenes/banner\ lck.png);
+}
+
+.liga--lec {
+  background-image: url(../imagenes/banner\ lec.png);
+}
+
+.liga--lcs {
+  background-image: url(../imagenes/banner\ lcs.png);
+}
+
+.liga--lla {
+  background-image: url(../imagenes/banner\ lla.png);
+}
+
+.liga--cblol {
+  background-image: url(../imagenes/banner\ cblol.png);
+}
+
+@media (min-width: 768px) {
+  .encabezado .encabezado--titulo {
+    font-size: 45px;
+  }
+  .encabezado .encabezado--texto {
+    font-size: 20px;
+  }
+  .liga {
+    width: 100%;
+    height: 40vh;
+  }
+  .liga .fecha--calendario {
+    font-size: 40px;
+    width: 400px;
+  }
+  .liga .logo--calendario {
+    width: 400px;
+  }
+  .liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .encabezado .encabezado--titulo {
+    font-size: 60px;
+  }
+  .encabezado .encabezado--texto {
+    font-size: 30px;
+  }
+  .liga {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s;
+  }
+  .liga .video--liga {
+    height: 500px;
+    position: absolute;
+  }
+  .liga .fecha--calendario {
+    font-size: 65px;
+    z-index: 1;
+  }
+  .liga .logo--calendario {
+    z-index: 1;
+  }
+  .liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.liga:hover {
+  transform: scale(1.3);
+  z-index: 1;
+  opacity: 1;
+}
+.liga:hover .video--liga {
+  display: block;
+}
+
+/*# sourceMappingURL=estilo-calendario.css.map */

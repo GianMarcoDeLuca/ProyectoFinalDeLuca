@@ -1,0 +1,87 @@
+@import 'tipografias';
+
+@mixin flex-row-center{display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;}
+
+.encabezado{padding: 10px;
+    .encabezado--titulo{font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;}
+
+    .encabezado--texto{font-family:'raleway';
+    color: whitesmoke;
+    font-size: 15px;}}
+
+.liga{background-size:100% 100%;
+background-repeat: no-repeat;
+height: 30vh;
+width: 100%;
+opacity: 0.8;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+    .video--liga{display: none;}
+    .fecha--calendario{font-size: 25px;
+    color: white;
+    width: 100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;}
+    .logo--calendario{display: flex;
+    justify-content: space-around;
+    width: 100px;
+        .logo--twitch, .logo--youtube{
+            img {width: 30px;
+            height: 30px;}}}}
+
+.liga--lpl{background-image: url(../imagenes/banner\ lpl.png);}
+.liga--lck{background-image: url(../imagenes/banner\ lck.png);}
+.liga--lec{background-image: url(../imagenes/banner\ lec.png);}
+.liga--lcs{background-image: url(../imagenes/banner\ lcs.png);}
+.liga--lla{background-image: url(../imagenes/banner\ lla.png);}
+.liga--cblol{background-image: url(../imagenes/banner\ cblol.png);}
+
+@media(min-width:768px){
+
+.encabezado{
+    .encabezado--titulo{font-size: 45px;}
+
+    .encabezado--texto{font-size: 20px;}}
+
+.liga{width: 100%;
+    height: 40vh;
+    .fecha--calendario{font-size: 40px;
+    width: 400px;}
+    .logo--calendario{width: 400px;
+        .logo--twitch, .logo--youtube{
+            img{width: 60px;
+            height: 60px;}}}}}
+
+@media(min-width:1200px){
+
+.encabezado{
+    .encabezado--titulo{font-size: 60px;}
+
+    .encabezado--texto{font-size: 30px;}}
+
+.liga{width: 100%;
+position: relative;
+overflow: hidden;
+transition: transform 1s;
+    .video--liga{height: 500px;
+    position:absolute;}
+    .fecha--calendario{font-size: 65px;
+    z-index: 1;}
+    .logo--calendario{
+    z-index: 1;
+        .logo--twitch, .logo--youtube{
+            img{width: 100px;
+            height: 100px;}}}}}
+
+.liga:hover {transform: scale(1.3);
+z-index: 1;
+opacity: 1;
+    .video--liga{display: block;}}

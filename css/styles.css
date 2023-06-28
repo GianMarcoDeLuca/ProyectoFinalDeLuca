@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @font-face {
   font-family: "Wix Madefor Text";
   src: url(../fuentes/WixMadeforText-VariableFont_wght.ttf);
@@ -11,107 +14,17 @@
   font-family: "Montserrat";
   src: url(../fuentes/Montserrat-Regular.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: rgb(94, 92, 92);
-}
-
-.navbar {
-  background-color: black;
-}
-.navbar .logo--img {
-  width: 60px;
-  margin-left: 10px;
-}
-.navbar .navbar-brand, .navbar .nav-link {
-  color: white;
-  font-family: "times new roman";
-  font-size: 30px;
-}
-.navbar .nav-link {
-  font-size: 20px;
+@font-face {
   font-family: "Wix Madefor Text";
-  margin-left: 10px;
+  src: url(../fuentes/WixMadeforText-VariableFont_wght.ttf);
 }
-
-.header--desktop {
-  display: none;
+@font-face {
+  font-family: "Raleway";
+  src: url(../fuentes/Raleway-Regular.ttf);
 }
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  padding: 20px;
-  background-color: black;
-}
-footer .copyright {
-  color: whitesmoke;
-  font-size: 10px;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    display: none;
-  }
-  .header--desktop {
-    background-color: black;
-    border-bottom: groove 8px black;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: grid;
-    grid-template-columns: 200px auto;
-    align-items: center;
-  }
-  .header--desktop .logo {
-    display: flex;
-    align-items: center;
-  }
-  .header--desktop .logo .logo--img {
-    width: 60px;
-    height: 60px;
-  }
-  .header--desktop .logo .logo--texto {
-    color: white;
-    font-size: 30px;
-    font-family: "instrumentSerif-regular";
-    text-decoration: none;
-  }
-  .header--desktop .paginas {
-    display: flex;
-    justify-content: space-around;
-  }
-  .header--desktop .paginas .paginas--link {
-    text-decoration: none;
-    font-family: "sigmar-regular", sans-serif;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-  }
-}
-@media (min-width: 1200px) {
-  .header--desktop {
-    grid-template-columns: 325px 950px;
-    grid-template-rows: 105px;
-  }
-  .header--desktop .logo .logo--img {
-    width: 85px;
-    height: 85px;
-  }
-  .header--desktop .logo .logo--texto {
-    font-size: 55px;
-  }
-  .header--desktop .paginas .paginas--link {
-    font-size: 55px;
-  }
-  footer .copyright {
-    font-size: 18px;
-  }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fuentes/Montserrat-Regular.ttf);
 }
 #fondo-index {
   background-image: url("../imagenes/fondo index.png");
@@ -177,7 +90,18 @@ article p #data {
     font-size: 30px;
   }
 }
-/* sccs match-list */
+@font-face {
+  font-family: "Wix Madefor Text";
+  src: url(../fuentes/WixMadeforText-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fuentes/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fuentes/Montserrat-Regular.ttf);
+}
 main .fecha--matchlist {
   border-bottom: 1px solid black;
   font-family: "times new roman";
@@ -315,7 +239,18 @@ main .partida-url .partida .BO {
     background-image: radial-gradient(circle, gray, rgb(94, 92, 92));
   }
 }
-/* css calendario.html */
+@font-face {
+  font-family: "Wix Madefor Text";
+  src: url(../fuentes/WixMadeforText-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fuentes/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fuentes/Montserrat-Regular.ttf);
+}
 .encabezado {
   padding: 10px;
 }
@@ -332,33 +267,34 @@ main .partida-url .partida .BO {
 }
 
 .liga {
-  background-size: 100% 150px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 150px;
+  height: 30vh;
   width: 100%;
   opacity: 0.8;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .liga .video--liga {
   display: none;
 }
 .liga .fecha--calendario {
-  font-size: 35px;
+  font-size: 25px;
   color: white;
-  width: 150px;
+  width: 100px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 .liga .logo--calendario {
   display: flex;
   justify-content: space-around;
-  width: 125px;
+  width: 100px;
 }
 .liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .liga--lpl {
@@ -393,20 +329,19 @@ main .partida-url .partida .BO {
     font-size: 20px;
   }
   .liga {
-    background-size: 100% 200px;
     width: 100%;
-    height: 200px;
+    height: 40vh;
   }
   .liga .fecha--calendario {
-    font-size: 50px;
-    width: 250px;
+    font-size: 40px;
+    width: 400px;
   }
   .liga .logo--calendario {
-    width: 250px;
+    width: 400px;
   }
   .liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -417,9 +352,7 @@ main .partida-url .partida .BO {
     font-size: 30px;
   }
   .liga {
-    background-size: 100% 250px;
     width: 100%;
-    height: 250px;
     position: relative;
     overflow: hidden;
     transition: transform 1s;
@@ -430,11 +363,9 @@ main .partida-url .partida .BO {
   }
   .liga .fecha--calendario {
     font-size: 65px;
-    width: 400px;
     z-index: 1;
   }
   .liga .logo--calendario {
-    width: 400px;
     z-index: 1;
   }
   .liga .logo--calendario .logo--twitch img, .liga .logo--calendario .logo--youtube img {
@@ -448,7 +379,132 @@ main .partida-url .partida .BO {
   opacity: 1;
 }
 .liga:hover .video--liga {
-  display: inline;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(94, 92, 92);
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar a .logo--img {
+  width: 60px;
+  margin-left: 10px;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: white;
+  font-family: "times new roman";
+  font-size: 30px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  font-family: "Wix Madefor Text";
+  margin-left: 10px;
+}
+
+.header--desktop {
+  display: none;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "riot copyright" "lol copyright";
+  justify-items: center;
+  padding: 15px;
+  background-color: black;
+}
+footer .imagenes--footer {
+  padding: 5px;
+}
+footer .imagenes--footer .item--riot {
+  grid-area: riot;
+}
+footer .imagenes--footer .item--lol {
+  grid-area: lol;
+}
+footer .copyright {
+  color: whitesmoke;
+  font-size: 16px;
+  grid-area: copyright;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .header--desktop {
+    background-color: black;
+    border-bottom: groove 8px black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+  }
+  .header--desktop .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header--desktop .logo a .logo--img {
+    width: 60px;
+    height: 60px;
+  }
+  .header--desktop .logo .logo--texto {
+    color: white;
+    font-size: 30px;
+    font-family: "instrumentSerif-regular";
+    text-decoration: none;
+  }
+  .header--desktop .paginas {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header--desktop .paginas .paginas--link {
+    text-decoration: none;
+    font-family: "sigmar-regular", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "riot lol copyright";
+}
+footer .imagenes--footer .item--riot img, footer .imagenes--footer .item--lol img {
+  width: 120px;
+}
+footer .copyright {
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .header--desktop {
+    grid-template-columns: 325px 950px;
+    grid-template-rows: 105px;
+  }
+  .header--desktop .logo a .logo--img {
+    width: 85px;
+    height: 85px;
+  }
+  .header--desktop .logo .logo--texto {
+    font-size: 55px;
+  }
+  .header--desktop .paginas .paginas--link {
+    font-size: 55px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
