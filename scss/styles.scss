@@ -43,8 +43,7 @@ background-color: black;
     font-size: 16px;
     grid-area: copyright;}}
 
-@media(min-width:768px) {
-
+@media(min-width:768px){
 .navbar{display: none;}
 
 .header--desktop{
@@ -72,7 +71,7 @@ align-items: center;
         font-family: 'sigmar-regular', sans-serif;
         color: white;
         font-size: 30px;
-        font-weight: bold;}}}}
+        font-weight: bold;}}}
 
 footer{display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -81,10 +80,9 @@ grid-template-areas: "riot lol copyright";
     .imagenes--footer{
         .item--riot, .item--lol{
             img{width: 120px;}}}
-    .copyright{font-size: 20px;}}
+    .copyright{font-size: 20px;}}}
 
 @media(min-width: 1200px){
-
 .header--desktop{grid-template-columns: 325px 950px;
 grid-template-rows: 105px;
     .logo{
